@@ -2,36 +2,114 @@
 <head>
     <title>Anchor Tags</title>
     <style>
-        .color-dark-grey{
+        * {
+            font-family: Open Sans;
+            font-size: 14px;
+        }
+        .color-dark-grey {
             color: #A9A9A9;
+        }
+        .color-blue {
+            color: blue;
         }
         .anchor-table{
             border:1px solid  #A9A9A9;
-            width:60%;
             text-align: left;
         }
-        th{
+        th {
             border-bottom: 1px solid #A9A9A9; 
+        }
+        th:first-child {
+            padding-left: 2%;
+        }
+        td:first-child {
+            padding-left: 2%;
+        }
+        .center {
+            text-align: center;
+        }
+        .table-align {
+            margin: auto;
+            width:50%;
+        }
+        .font-large{
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center; color: Blue">Anchor Tags</h1><br><br>
-    <table class="anchor-table">
-        <tbody>
-            <tr >
-                <th>
-                    Value
-                </th>
-                <th>
-                    Description
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    _blank	
-                </td>
-            </tr>    
-        </tbody>
-    </table>
+    <h1 class="center color-blue font-large">Anchor Tags</h1><br>
+    <div class = "center">   
+        <table class="anchor-table table-align">
+            <tbody>
+                <tr>
+                    <th style="width:20%">
+                        Value
+                    </th>
+                    <th style="width:70%">
+                        Description
+                    </th>
+                    <th style="width:10%">
+                        Example
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        _blank	
+                    </td>
+                    <td>
+                        Opens the linked document in a new window or tab	
+                    </td>
+                    <td>
+                        <a href="https://www.google.com" target="_blank" id='first'>Click</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        _self	
+                    </td>
+                    <td>
+                        Opens the linked document in the same frame as it was clicked (this is default)
+                    </td>
+                    <td>
+                        <a href="https://www.google.com" target="_self" id='second'>Click</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        _parent	
+                    </td>
+                    <td>
+                        Opens the linked document in the parent frame
+                    </td>
+                    <td>
+                        <a href="https://www.google.com" target="_parent" id='third'>Click</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        _top	
+                    </td>
+                    <td>
+                        Opens the linked document in the full body of the window
+                    </td>
+                    <td>
+                        <a href="https://www.google.com" target="_top" id='fourth'>Click</a>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        framename	
+                    </td>
+                    <td>
+                        Opens the linked document in a named frame
+                    </td>
+                    <td>
+                        <a href="#second" id='fifth'>Click</a>
+                    </td>
+                </tr> 
+            </tbody>
+        </table>
+
+    </div>    
 </body>    
